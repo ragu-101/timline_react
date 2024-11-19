@@ -1,0 +1,33 @@
+@import '../../mixin.scss';
+
+.calendercontainer{
+    height: 100vh;
+    overflow: auto;
+}
+
+.headerrow{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 16px;
+    @include desktop{
+        flex-direction: column;
+    }
+    .headerright{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .headerleft{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        justify-content: flex-start;
+    }
+    .currentview{
+        min-width: 200px;
+        margin: auto;
+        text-align: center;
+    }
+}
